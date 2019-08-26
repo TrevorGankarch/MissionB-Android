@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="dwarsoft.blooddonorapp.profile">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimaryDark">
+
+        <TextView
+            android:id="@+id/displaytext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:height="50dp"
+            android:paddingTop="10dp"
+            android:text="PROFILE"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/empty_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.464" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="410dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/cv1"
+        app:cardBackgroundColor="@color/colorPrimary"
+        app:cardCornerRadius="5dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileimage"
+            android:visibility="gone"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:onClick="addimage"
+            android:layout_marginLeft="10dp"
+            android:src="@color/colorPrimary"
+            android:textAlignment="center"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp" />
+
+        <EditText
+            android:id="@+id/profilename"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:background="#17161B"
+            android:hint="Name"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:textColor="#FFF"
+            android:textColorHint="#FFF" />
+
+        <EditText
+            android:id="@+id/profileage"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="60dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:background="#17161B"
+            android:hint="Age"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:textColor="#FFF"
+            android:textColorHint="#FFF" />
+
+        <LinearLayout android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="110dp"
+            android:layout_width="match_parent">
+
+            <Spinner
+                android:layout_weight="1"
+                android:id="@+id/profilegender"
+                android:layout_marginLeft="10dp"
+                android:layout_height="match_parent"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown"
+                android:layout_width="0dp"/>
+
+            <Spinner
+                android:layout_weight="1"
+                android:id="@+id/profileblood"
+                android:layout_marginRight="10dp"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/profilephone"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="160dp"
+            android:layout_height="40dp"
+            android:background="#17161B"
+            android:ems="10"
+            android:hint="Phone no"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:textColor="#FFF"
+            android:textColorHint="#FFF" />
+
+        <TextView
+            android:id="@+id/profileaddress"
+            android:layout_width="match_parent"
+            android:textColor="#FFF"
+            android:layout_height="130dp"
+            android:clickable="true"
+            android:ems="10"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="220dp"
+            android:background="#17161B"
+            android:inputType="textMultiLine"
+            android:onClick="piccc"
+            android:text="Click to set address"
+            app:layout_constraintVertical_bias="0.18" />
+
+        <Spinner
+            android:id="@+id/profiletype"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="360dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown" />
+
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/profileupdate"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:layout_below="@+id/cv1"
+        android:text="Update Profile"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:onClick="updateprofile"
+        android:textColor="#FFF" />
+
+    <Button
+        android:id="@+id/profilelogout"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:layout_below="@+id/profileupdate"
+        android:text="LOGOUT"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:onClick="profilelogout"
+        android:textColor="#FFF" />
+
+</RelativeLayout>

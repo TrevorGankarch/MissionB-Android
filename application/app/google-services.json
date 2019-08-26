@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "677251785632",
+    "firebase_url": "https://blood-59479.firebaseio.com",
+    "project_id": "blood-59479",
+    "storage_bucket": "blood-59479.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:677251785632:android:ddde82c3b1c2e85f",
+        "android_client_info": {
+          "package_name": "dwarsoft.blooddonorapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "677251785632-6ccqhpb7ksl67off7u87p8hru3frcilb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "dwarsoft.blooddonorapp",
+            "certificate_hash": "38b0f1407220a273398f036e83462d570d906d47"
+          }
+        },
+        {
+          "client_id": "677251785632-rps9g8k0umsrc3dj8lkqgin3efpoge1h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwsoHCcSIhBlc1YbqybgclXh8NKRvYe18"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "677251785632-rps9g8k0umsrc3dj8lkqgin3efpoge1h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

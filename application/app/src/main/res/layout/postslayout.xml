@@ -1,0 +1,132 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="8dp">
+
+        <TextView
+            android:id="@+id/recname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="10dp"
+            android:maxLines="1"
+            android:maxLength="20"
+            android:layout_toRightOf="@+id/img"
+            android:paddingLeft="20dp"
+            android:text="Name"
+            android:textColor="#000000"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/recage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="240dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/img"
+            android:paddingLeft="20dp"
+            android:text="Age"
+            android:textColor="#000000"
+
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/recblood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="40dp"
+            android:layout_toRightOf="@+id/img"
+            android:paddingLeft="20dp"
+            android:maxLines="1"
+            android:maxLength="15"
+            android:text="Blood Group"
+            android:textColor="#000000"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/recunits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="240dp"
+            android:layout_marginTop="40dp"
+            android:layout_toRightOf="@+id/img"
+            android:paddingLeft="20dp"
+            android:text="Units"
+            android:textColor="#000000"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/recaddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="100dp"
+            android:layout_toRightOf="@+id/img"
+            android:padding="5dp"
+            android:paddingLeft="20dp"
+            android:text="Address"
+            android:textColor="#000000"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/recphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="194dp"
+            android:layout_toRightOf="@+id/img"
+            android:paddingLeft="2dp"
+            android:text="Phone"
+            android:textColor="#000000"
+            android:textSize="15dp" />
+
+
+        <TextView
+            android:id="@+id/recdesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="70dp"
+            android:layout_toRightOf="@+id/img"
+            android:paddingLeft="20dp"
+            android:text="Description"
+            android:textColor="#000000"
+            android:textSize="15dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="15dp"
+            android:src="@color/colorPrimary"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp" />
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
